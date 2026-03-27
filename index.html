@@ -1,1 +1,260 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gʻayviyeva Marjona Oʻlmasovna | Shaxsiy Sayt</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+            overflow-x: hidden;
+            background: #0a0a2e;
+        }
+        
+        /* Animatsiyali orqa fon */
+        #canvas {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: -1;
+            opacity: 0.85;
+        }
+        
+        header {
+            text-align: center;
+            padding: 100px 20px 60px;
+            position: relative;
+        }
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.4rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background: rgba(10, 10, 46, 0.95);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover { color: #a0d8ff; }
+        
+        section {
+            padding: 80px 10%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #a0d8ff;
+        }
+        
+        .about, .education, .achievements, .contact {
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 50px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .contact a {
+            color: #a0d8ff;
+            text-decoration: none;
+        }
+        
+        footer {
+            text-align: center; 
+          
+            padding: 40px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.8rem; }
+        }
+    </style>
+</head>
+<body>
 
+    <canvas id="canvas"></canvas>
+
+    <nav>
+        <a href="#about">Men haqimda</a>
+        <a href="#education">Ta'lim</a>
+        <a href="#achievements">Yutuqlar</a>
+        <a href="#contact">Kontaktlar</a>
+    </nav>
+
+    <header class="hero">
+        <h1>Gʻayviyeva Marjona Oʻlmasovna</h1>
+        <p>Qarshi Davlat Universiteti<br>
+        Matematika va Kompyuter Ilmlari Fakulteti<br>
+        Axborot Tizimlari va Texnologiyalari yo‘nalishi • 024-34 guruh</p>
+        <p style="margin-top: 30px; font-size: 1.1rem; opacity: 0.85;">
+            Tabiiy va aniq fanlarga qiziqaman • Professional rassom
+        </p>
+    </header>
+
+    <section id="about">
+        <div class="about">
+            <h2>Men haqimda</h2>
+            <p style="font-size: 1.15rem; line-height: 1.8;">
+                Salom! Men Marjona Gʻayviyeva — Qarshi Davlat Universitetining iqtidorli talabasiman. 
+                Matematika, informatika va aniq fanlarga chuqur qiziqaman, shu bilan birga rassomchilik mening eng katta ehtirosim. 
+                Turli xalqaro va respublika ko‘rik-tanlovlarida ishtirok etib, bir nechta sertifikat va diplomlar bilan taqdirlanganman.
+            </p>
+            <p style="margin-top: 20px; font-size: 1.15rem; line-height: 1.8;">
+                Mening maqsadim — aniq fanlar va san’atni uyg‘unlashtirib, ijodiy va texnologik loyihalar yaratish.
+            </p>
+        </div>
+    </section>
+<section id="education">
+        <div class="education">
+            <h2>Ta'lim</h2>
+            <p><strong>Qarshi Davlat Universiteti</strong></p>
+            <p>Matematika va Kompyuter Ilmlari Fakulteti</p>
+            <p>Axborot Tizimlari va Texnologiyalari yo‘nalishi</p>
+            <p>024-34 guruh • 2024-yildan hozirgacha</p>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <div class="achievements">
+            <h2>Yutuqlar va Sertifikatlar</h2>
+            <p>Rassomchilik bo‘yicha bir nechta respublika va xalqaro tanlovlarda g‘olib va sovrindor bo‘lganman. 
+               Sertifikat va diplomlarimni portfolio bo‘limida yoki Instagram sahifamda ko‘rishingiz mumkin.</p>
+            <!-- Bu yerga rasmlar yoki ro‘yxat qo‘shishingiz mumkin -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact">
+            <h2>Aloqa</h2>
+            <p><strong>Telefon:</strong> <a href="tel:+998906684600">+998 90 668 46 00</a></p>
+            <p><strong>Telegram:</strong> <a href="https://t.me/gayviyevas_1" target="_blank">@gayviyevas_1</a></p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/olmasvn_a" target="_blank">@olmasvn_a</a></p>
+            <p style="margin-top: 30px;">Mening ijodim va loyihalarim bilan tanishish uchun ijtimoiy tarmoqlarga obuna bo‘ling!</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Gʻayviyeva Marjona Oʻlmasovna • Barcha huquqlar himoyalangan
+    </footer>
+
+    <script>
+        // Canvas - yulduzlar va rassomlik ikonlari animatsiyasi
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        let width, height;
+        function resize() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        }
+        resize();
+        window.addEventListener('resize', resize);
+
+        // Yulduzlar
+        let stars = [];
+        for (let i = 0; i < 300; i++) {
+            stars.push({
+                x: Math.random() * width,
+                y: Math.random() * height,
+                size: Math.random() * 2.5 + 0.5,
+                speed: Math.random() * 0.5 + 0.2
+            });
+        }
+
+        // Rassomlik ikonlari (oddiy emoji/text bilan chiziladi)
+        const icons = ['🎨', '🖌️', '🌈', '🖼️', '✏️', '📐', '🔭'];
+        let particles = [];
+        
+        class Particle {
+            constructor() {
+                this.x = Math.random() * width;
+                this.y = Math.random() * height;
+                this.size = Math.random() * 25 + 20;
+                this.speedX = Math.random() * 1.5 - 0.75;
+                this.speedY = Math.random() * 1.5 - 0.75;
+                this.icon = icons[Math.floor(Math.random() * icons.length)];
+                this.opacity = Math.random() * 0.6 + 0.4;
+                this.angle = 0;
+                this.rotateSpeed = Math.random() * 0.02 - 0.01;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                this.angle += this.rotateSpeed;
+                
+                if (this.x < 0 || this.x > width) this.speedX *= -1;
+                if (this.y < 0 || this.y > height) this.speedY *= -1;
+            }
+            draw() {
+                ctx.save();
+                ctx.globalAlpha = this.opacity;
+                ctx.translate(this.x, this.y);
+                ctx.rotate(this.angle);
+                ctx.font = ${this.size}px Arial;
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(this.icon, 0, 0);
+                ctx.restore();
+            }
+        }
+
+        // Boshlang'ich particle'lar
+        for (let i = 0; i < 25; i++) {
+            particles.push(new Particle());
+        }
+
+        function animate() {
+            ctx.fillStyle = 'rgba(10, 10, 46, 0.12)';
+            ctx.fillRect(0, 0, width, height); 
+      // Yulduzlar
+            ctx.fillStyle = '#ffffff';
+            for (let star of stars) {
+                ctx.globalAlpha = Math.random() * 0.8 + 0.4;
+                ctx.fillRect(star.x, star.y, star.size, star.size);
+                star.y += star.speed;
+                if (star.y > height) star.y = 0;
+            }
+            ctx.globalAlpha = 1;
+
+            // Ikonlar
+            for (let p of particles) {
+                p.update();
+                p.draw();
+            }
+
+            // Yangi particle qo‘shish
+            if (Math.random() < 0.03) {
+                particles.push(new Particle());
+            }
+            if (particles.length > 40) particles.shift();
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
+</body>
+</html>
